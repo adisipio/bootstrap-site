@@ -3,6 +3,7 @@
 <head>
 <link href="Content/css/bootstrap.min.css " rel="stylesheet">
 <link href="Content/css/custom-styles.css" rel="stylesheet">
+<script type="text/javascript" src="Content/js/jquery.min.js"></script>
 </head>
 <body>
 	<nav class="navbar navbar-default navbar-fixed-top">
@@ -16,29 +17,36 @@
 	      </button>
 	      <a class="navbar-brand" href="#">a.j.jr <small>author</small></a>
 	    </div>
-	    <div id="navbar" class="navbar-collapse collapse">
-	      <ul class="nav navbar-nav">
-	        <li class="active"><a href="#">Home</a></li>
-	        <li><a href="About/">When I'm 64</a></li>
-	        <li><a href="About/">The Corner</a></li>
-	        <li><a href="About/">About</a></li>
-	        <li><a href="#contact">Contact</a></li>	        
-	      </ul>	     
-	    </div><!--/.nav-collapse -->
+		<div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="About/">About</a></li>
+				<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Books <span class="caret"></span></a>
+				<ul class="dropdown-menu">
+				<li><a href="Books/When I'm 64/">When I'm 64</a></li>
+				<li><a href="#">The Corner</a></li>          
+				 </ul>
+				</li>			            
+			</ul>	     
+		</div>
 	  </div>
 	</nav>
 	<div class="container">
-			<div class="panel panel-default">
+		<div class="row text-center">
+			<div class="panel main-panel panel-default">
 				<div class="panel-heading">
-					<h3 class="panel-title">When I'm 64 by a.j.jr</h3>
-					<small>A humorous look at how the boomer generation made it through the 60s.</small>
+					<h3 class="panel-title">a.j.jr</h3>
 				</div>
 			<div class="panel-body">
-				Panel content
+				<em>"Once upon a time, you dressed so fine; you threw the bums a dime, didn't you?"</em><br/><br/>
+				 <em>"O, the times, they are a changin'."</em> <br/><br/>There must be 82 million of you out there we could close the New York State Freeway again if we wanted! Baby Boomers have reached middle age and beyond. Take a look back at how we were going to change the world: or, how the world around us has changed. Whatever happened to those paisley bell bottoms you had? Did anyone write better poetry than Dylan or the artists of Motown? How has fast food become the restaurant of choice?
+			</div>
 			</div>
 		</div>
 	</div>
-<script src="Content/js/bootstrap.min.js"
-
+	
+	<script type="text/javascript" src="Content/js/bootstrap.min.js"></script>
 </body>
 </html>
+
