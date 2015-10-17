@@ -1,8 +1,21 @@
 body{
 	padding-top: 75px;
+	background-color: #D6D6D6;
 }
 
 .main-panel{
 	max-width: 50%;
-	margin-left: 25%;
+	margin: auto;
+}
+.book-panel{
+	max-width: 75%;
+	margin: auto;
+}
+
+.pad-left{
+	padding-left: 15px;
+}
+
+.sub-head{
+	color : #FF330A;
 }
