@@ -42,24 +42,24 @@
 		<div class="panel-body">
 		<img class="img-wrap img-responsive" style="max-height: 300px;" src="../../Content/images/book.jpg">
 
-			This is the second release of this book: originally it was published in 2002, when the author really was middle aged. <br/><br/>
+			No matter where you grew up or spent your formative years in the 60s and 70s, this book is bound to get you remembering what made us so special. Why do you think the TV networks are scheduling "look back" program. Heck, even the Rolling Stones are still touring! <br/><br/>
 
-Lots has changed, mostly he is now 10 years old (Now he really is 64!!) and retired. But the message is the same: over 70 million Baby Boomers, traveling through "space, the final frontier." Oh, wait, wrong book. <br/><br/>
-
-a.j.jr has lived through the last half of the fascinating twentieth century. He has had operations on his knees and back, the Viet Nam Conflict interrupted his life, he inhaled and he never got to Woodstock. While his body might not work the same way that it did when he was 16, his mind can still remember with the best of them. He attributes this to teaching 8th graders (remember what 8th grade was like?) for 35 years. <br/><br/> 
-a.j. believes that no matter where you grew up during the amazing times of our generation, we all shared certain experiences that made us a unique generation. We lived through some amazing times. And while he doesn't really want to go back and relive them, he doesn't want anyone to forget what we once shared.
+Put on your hip hugger jeans, tie-dyed shirt and John Lennon shades. Better yet, put the "album" soundtrack from Saturday Night Fever on your stereo and get out your disco shoes. Take a break from the new millennium. Look back at what we've been through. You can even inhale. What a long, strange trip it's been!
 		</div>
 		<div class="panel-footer">
 		<span>Get your copy today!</span>
-		<form action=" method="POST">
-  <script
-    src="https://checkout.stripe.com/v2/checkout.js" class="stripe-button"
-    data-key="pk_test_G5YhIkq2PEq84lwU064TZENT"
-    data-amount="2000"
-    data-name="Demo Site"
-    data-description="Book ($20.00)"
-    data-image="/128x128.png">
-  </script>
+		<form action="https://guarded-tundra-1002.herokuapp.com/charge" method="POST">
+    <script
+        src="https://checkout.stripe.com/checkout.js"
+        class="stripe-button"
+        data-shipping-address="true"
+        data-key="pk_test_2agLAY2k2Sxp8Don8xAPL3wT"
+        data-name="When I'm 64 by a.j.jr"
+        data-amount="2000"
+    ></script>
+    <input name="amount" value="2000" type="hidden">
+    <input name="description" value="For When I'm 64 by a.j.jr" type="hidden">
+    <input name="metadata" value="Test" type="hidden">
 </form></div>
 		
 	</div>

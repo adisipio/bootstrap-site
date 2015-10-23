@@ -20,7 +20,7 @@
 		<div id="navbar" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
 				<li><a href="../../">Home</a></li>
-				<li><a href="../About/">About</a></li>
+				<li><a href="../../About/">About</a></li>
 				<li class="dropdown active">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Books <span class="caret"></span><small class="pad-left">The Corner</small></a>
 				<ul class="dropdown-menu">
@@ -37,7 +37,7 @@
 		<div class="panel book-panel panel-default">
 			<div class="panel-heading">
 				<h3>The Corner by a.j.jr</h3>
-				<span class="sub-head">A humorous look at how the boomer generation made it through the 60s.</span>
+				<span class="sub-head">Salvatore Pescatore and his friends learn the life lessons of growing up in the sixties "on the corner" in South Philadelphia.</span>
 			</div>
 		<div class="panel-body">
 		<img class="img-wrap img-responsive" style="max-height: 300px;" src="../../Content/images/corner.jpg">
@@ -50,15 +50,18 @@ Put on your own sixties soundtrack and recall that incredible time period that w
 		</div>
 		<div class="panel-footer">
 		<span>Get your copy today!</span>
-		<form action=" method="POST">
-  <script
-    src="https://checkout.stripe.com/v2/checkout.js" class="stripe-button"
-    data-key="pk_test_G5YhIkq2PEq84lwU064TZENT"
-    data-amount="2000"
-    data-name="Demo Site"
-    data-description="Book ($20.00)"
-    data-image="/128x128.png">
-  </script>
+		<form action="https://guarded-tundra-1002.herokuapp.com/charge" method="POST">
+    <script
+        src="https://checkout.stripe.com/checkout.js"
+        class="stripe-button"
+        data-shipping-address="true"
+        data-key="pk_test_2agLAY2k2Sxp8Don8xAPL3wT"
+        data-name="The Corner by a.j.jr"
+        data-amount="2000"
+    ></script>
+    <input name="amount" value="2000" type="hidden">
+    <input name="description" value="For the Corner by a.j.jr" type="hidden">
+    <input name="metadata" value="Test" type="hidden">
 </form></div>
 		
 	</div>
